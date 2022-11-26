@@ -323,6 +323,7 @@
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+    padding-bottom: 80px;
 }
 
   /*-- --*/
@@ -335,7 +336,6 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 7px;
-    padding-bottom: 80px;
   }
     
   .blogs__item-1{
