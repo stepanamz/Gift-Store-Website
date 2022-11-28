@@ -511,19 +511,17 @@
     opacity: 0.6;
    }
 
-   .blogs__card-container:has(.cl1:hover) .bc2 {
-    opacity: 0.2;
-    }
-    .blogs__card-container:has(.cl1:hover) .bc1 {
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
-     }
 
-    .blogs__card-container:has(.cl2:hover) .bc1 {
-    opacity: 0.2;
-        }
-    .blogs__card-container:has(.cl2:hover) .bc2 {
-     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
-     }
+  
+   .blogs__card-container:has(.cl1:hover) .bc2 { opacity: 0.2; }
+
+    .blogs__card-container:has(.cl1:hover) .bc1 { box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25); }
+
+
+    .blogs:has(.cl2:hover) .bc1 {   opacity: 0.2;   }
+    
+    .blogs__card-container:has(.cl2:hover) .bc2 { box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25); }
+
 
    .footer{
     max-width: 1440px;
