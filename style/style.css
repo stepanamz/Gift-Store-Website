@@ -139,6 +139,7 @@
 .hero__right-block{
     max-width: 719px;
     max-height: 700px;
+    overflow: hidden;
 }
 
 .hero__image{
@@ -146,6 +147,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: 0.6s;
+}
+
+.hero:has(.hero__button:hover) .hero__image{
+    transform: scale(1.1);
 }
 
 
@@ -154,13 +160,15 @@
 .feature__left-block{
     max-width: 721px;
     max-height: 600px;
-
+    overflow: hidden;
 }
 
 .feature__image{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    transition: 0.6s;
 }
 
 .feature__right-block{
@@ -202,11 +210,18 @@
     transition: 0.6s;
 }
 
+.main:has(.feature__button:hover) .feature__image{
+    transform: scale(1.1);
+}
+
 .feature__button:hover{
     transform: scale(1.05);
     opacity: 0.8;
     box-shadow: 1px 1px 5px #F7941E;
 }
+
+
+
 
 .gifts{
     max-width: 1440px;
@@ -241,6 +256,7 @@
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .gifts__card{
@@ -256,6 +272,8 @@
     max-width: 270px;
     max-height: 270px;
     object-fit: cover;
+    transition: 0.6s;
+    
 }
 
 
@@ -265,6 +283,7 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
+    
 }
 
 .gifts__card-title{
@@ -286,6 +305,10 @@
     transform: translateX(10px);
     opacity: 0.7;
 }
+
+.gifts__card:has(.gifts__card-link:hover) .gifts__card-image {
+    transform: scale(1.1);
+    }
 
 .orange{
     max-width: 1440px;
@@ -388,6 +411,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 7px;
+    overflow: hidden;
   }
     
   .blogs__item-1{
@@ -397,6 +421,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: 0.6s;
   }
 
   .blogs__item-2{
@@ -438,6 +463,10 @@
     opacity: 0.6;
   }
 
+  .blogs__container:has(.blogs__link-poster:hover) .blogs__item-1 {
+    transform: scale(1.1);
+    }
+
   .blogs__card-container{
     max-width: 1170px;
     display: flex;
@@ -455,6 +484,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.6s;
    }
 
    .blogs__card-title{
@@ -481,7 +511,19 @@
     opacity: 0.6;
    }
 
-  
+   .blogs__card-container:has(.cl1:hover) .bc2 {
+    opacity: 0.2;
+    }
+    .blogs__card-container:has(.cl1:hover) .bc1 {
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+     }
+
+    .blogs__card-container:has(.cl2:hover) .bc1 {
+    opacity: 0.2;
+        }
+    .blogs__card-container:has(.cl2:hover) .bc2 {
+     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+     }
 
    .footer{
     max-width: 1440px;
